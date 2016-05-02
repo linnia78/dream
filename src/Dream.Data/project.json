@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0-*",
+  "description": "Dream.Data Class Library",
+  "authors": [ "Allen" ],
+  "tags": [ "" ],
+  "projectUrl": "",
+  "licenseUrl": "",
+  "frameworks": {
+    "dnx451": { }
+  },
+  "dependencies": {
+    "EntityFramework.Core": "7.0.0-rc1-final",
+    "EntityFramework.Commands": "7.0.0-rc1-final",
+    "Dream.Core": "1.0.0-*",
+    "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final"
+  },
+  "commands": {
+    "ef": "EntityFramework.Commands"
+  },
+  "userSecretsId": "aspnet5-Dream.Data-20160501093439"
+}
