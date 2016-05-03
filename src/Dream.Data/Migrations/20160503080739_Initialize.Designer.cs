@@ -8,8 +8,8 @@ using Dream.Data;
 namespace dream.data.Migrations
 {
     [DbContext(typeof(DreamContext))]
-    [Migration("20160502043731_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20160503080739_Initialize")]
+    partial class Initialize
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

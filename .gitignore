@@ -76,5 +76,17 @@ artifacts/
 # but keep track of directories ending in .cache
 !*.[Cc]ache/
 
+#Ionic
+node_modules
+.tmp
+.sass-cache
+lib
+platforms
+plugins
+*.swp
+*.swo
+*.log
+*.DS_Store
+
 # JS
 node_modules/

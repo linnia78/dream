@@ -5,10 +5,7 @@
   },
 
   "dependencies": {
-    "Dream.Common": "1.0.0-*",
     "Dream.Core": "1.0.0-*",
-    "Dream.Data": "1.0.0-*",
-    "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
     "Microsoft.ApplicationInsights.AspNet": "1.0.0-rc1",
     "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
     "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
@@ -22,11 +19,12 @@
   },
 
   "commands": {
-    "web": "Microsoft.AspNet.Server.Kestrel"
+    "web": "Microsoft.AspNet.Server.Kestrel",
   },
 
   "frameworks": {
-    "dnx451": { }
+    "dnx451": { },
+    "dnxcore50": { }
   },
 
   "exclude": [
@@ -37,5 +35,5 @@
     "**.user",
     "**.vspscc"
   ],
-  "userSecretsId": "aspnet5-Dream.Api-20160501093530"
+  "userSecretsId": "DreamBig"
 }

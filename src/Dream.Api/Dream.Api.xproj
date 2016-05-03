@@ -6,7 +6,7 @@
   </PropertyGroup>
   <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>4c126316-1279-4bcd-9859-e1f193649972</ProjectGuid>
+    <ProjectGuid>31126b97-09d1-49c3-abe8-a024ec292549</ProjectGuid>
     <RootNamespace>Dream.Api</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">..\..\artifacts\obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">..\..\artifacts\bin\$(MSBuildProjectName)\</OutputPath>

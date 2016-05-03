@@ -7,7 +7,7 @@
 
   <Import Project="$(VSToolsPath)\DNX\Microsoft.DNX.Props" Condition="'$(VSToolsPath)' != ''" />
   <PropertyGroup Label="Globals">
-    <ProjectGuid>94f85c1f-21c4-4249-81ae-32f2d25bfc14</ProjectGuid>
+    <ProjectGuid>47f7612b-6127-4ec7-942c-2268606214f5</ProjectGuid>
     <RootNamespace>Dream.Core</RootNamespace>
     <BaseIntermediateOutputPath Condition="'$(BaseIntermediateOutputPath)'=='' ">..\..\artifacts\obj\$(MSBuildProjectName)</BaseIntermediateOutputPath>
     <OutputPath Condition="'$(OutputPath)'=='' ">..\..\artifacts\bin\$(MSBuildProjectName)\</OutputPath>

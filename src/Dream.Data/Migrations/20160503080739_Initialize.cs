@@ -5,7 +5,7 @@ using Microsoft.Data.Entity.Metadata;
 
 namespace dream.data.Migrations
 {
-    public partial class InitialMigration : Migration
+    public partial class Initialize : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
