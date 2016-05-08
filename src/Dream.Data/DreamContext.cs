@@ -13,15 +13,15 @@ namespace Dream.Data
         public DbSet<User> Users { get; set; }
         public DbSet<ReminderContent> ReminderContents { get; set; }
 
-        private readonly AppSettings _settings;
+        private readonly ConfigurationFactory _configurationFactory;
         public DreamContext()
         {
-            this._settings = new AppSettings();
+            this._configurationFactory = new ConfigurationFactory();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
         {
-            options.UseSqlServer(this._settings.Configuration["Data:DefaultConnection:ConnectionString"]);
+            options.UseSqlServer(this._configurationFactory.GetConfiguration()["Data:DefaultConnection:ConnectionString"]);
         }
     }
 }

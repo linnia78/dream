@@ -6,17 +6,22 @@ using Microsoft.Extensions.Configuration;
 
 namespace Dream.Core
 {
-    public class AppSettings
+    public class ConfigurationFactory
     {
-        public IConfigurationRoot Configuration { get; set; }
+        private IConfigurationRoot Configuration { get; set; }
 
-        public AppSettings()
+        public ConfigurationFactory()
         {
-            this.Configuration = new ConfigurationBuilder()
+        }
+
+        public IConfigurationRoot GetConfiguration()
+        {
+            this.Configuration = Configuration ?? new ConfigurationBuilder()
                 .AddJsonFile("appsettings.json", true)
                 .AddUserSecrets()
                 .AddEnvironmentVariables()
                 .Build();
+            return this.Configuration;
         }
     }
 }
